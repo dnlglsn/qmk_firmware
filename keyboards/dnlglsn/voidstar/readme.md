@@ -27,5 +27,5 @@ Yellow B (yB) would be the layout: `bB_rANSI_pD_gD_oB_yB`. To flash the layout
 using `avrdude`, use the command:
 
 ```bash
-make dnlglsn/voidstar/v1:bB_rANSI_pD_gD_oB_yB:avrdude
+make dnlglsn/voidstar:bB_rANSI_pD_gD_oB_yB:avrdude
 ```

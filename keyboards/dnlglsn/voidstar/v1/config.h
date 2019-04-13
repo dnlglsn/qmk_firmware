@@ -21,13 +21,6 @@
 #define MATRIX_ROW_PINS { B5, B4, E6, D4, D2, D3 }
 #define MATRIX_COL_PINS { B2, B3, B1, F7, F6, F5, F4, B6, D7, C6 }
 
-// Old working code
-// #ifdef LEFT_HALF
-// #define MATRIX_COL_PINS { C6, D7, B6, B2, B3, B1, F7, F6, F5, F4 }
-// #else
-// #define MATRIX_COL_PINS { B2, B3, B1, F7, F6, F5, F4, B6, D7, C6 }
-// #endif
-
 // split keyboard configuration
 #define USE_I2C
 #define MASTER_LEFT

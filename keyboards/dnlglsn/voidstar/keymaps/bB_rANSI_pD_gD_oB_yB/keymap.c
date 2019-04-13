@@ -11,7 +11,6 @@
 // Keycode combo aliases
 #define CTRL_F4 C(KC_F4)
 #define ALT_F4  A(KC_F4)
-#define ALT_TAB A(KC_TAB)
 #define L_MIN DF(_MIN)
 #define L_FULL DF(_FULL)
 
@@ -40,8 +39,8 @@ L_MIN,   KC_Q,    KC_R,    KC_LCTL, KC_LGUI, KC_LALT, MO(_FN), KC_SPC,  XXXXXXX,
 [_FN] = LAYOUT( \
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
 _______, _______, _______, _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,  		KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, _______, _______, \
-_______, _______, _______, ALT_TAB, ALT_F4,  KC_UP,   _______, _______, _______, _______,		_______, _______, KC_PGUP, _______, KC_PSCR, CTRL_F4, ALT_F4,  XXXXXXX, KC_F5,   _______, \
-_______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, XXXXXXX,		_______, KC_HOME, KC_PGDN, KC_END,  _______, _______, XXXXXXX, _______, XXXXXXX, _______, \
+_______, _______, _______, _______, ALT_F4,  KC_UP,   _______, _______, _______, _______,		KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_PSCR, CTRL_F4, ALT_F4,  XXXXXXX, KC_F5,   _______, \
+_______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, XXXXXXX,		KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, XXXXXXX, _______, XXXXXXX, _______, \
 _______, _______, _______, XXXXXXX, _______, _______, _______, KC_CAPS, _______, _______,		_______, _______, _______, _______, _______, _______, _______, KC_PGUP, _______, _______, \
 _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX, XXXXXXX,		XXXXXXX, _______, XXXXXXX, _______, _______, _______, KC_HOME, KC_PGDN, KC_END,  _______  \
 ),
