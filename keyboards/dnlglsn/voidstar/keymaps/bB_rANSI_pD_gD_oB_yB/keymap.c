@@ -13,6 +13,13 @@
 #define ALT_F4  A(KC_F4)
 #define L_MIN DF(_MIN)
 #define L_FULL DF(_FULL)
+#define ALT_TAB A(KC_TAB)
+
+// Defines the keycodes used by our macros in process_record_user
+enum custom_keycodes {
+	FN_ATAB = SAFE_RANGE,
+	BLAH
+};
 
 // Layout template - don't forget the backslashes at the end of each line! (They can't be in comments so I had to take them out.)
 // The positions with XXXXXXX don't actually exist in the matrix on the PCB.
@@ -55,3 +62,21 @@ L_FULL,  XXXXXXX, KC_APP,  KC_LCTL, KC_LGUI, KC_LALT, MO(_FN), KC_SPC,  XXXXXXX,
 ),
 
 };
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record)
+{
+	switch (keycode)
+	{
+		case FN_ATAB:
+		if (record->event.pressed)
+		{
+			SEND_STRING("https://qmk.fm/" SS_TAP(X_ENTER));
+		}
+		else
+		{
+			// when keycode FN_ATAB is released
+		}
+		break;
+	}
+	return true;
+}
