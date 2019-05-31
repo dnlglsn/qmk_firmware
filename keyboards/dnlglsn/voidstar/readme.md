@@ -35,10 +35,15 @@ http://www.keyboard-layout-editor.com/#/gists/396ea4610bedcd2d3a1302b5780d3cfe
 Then, use the combinations of color section options to choose which layout to
 flash to the controller.
 
-For example: Blue B (bB), Red ANSI (rANSI), Purple D (pD), Orange B (oB), and
-Yellow B (yB) would be the layout: `bB_rANSI_pD_gD_oB_yB`. To flash the layout
+For example: Blue B (bB), Red ANSI (rA), Purple C (pC), Orange B (oB), and
+Yellow C (yC) would be the layout: `bB_rA_pC_gF_oB_yC`. To flash the layout
 using `avrdude`, use the command:
 
 ```bash
-make dnlglsn/voidstar:bB_rANSI_pD_gD_oB_yB:avrdude
+make dnlglsn/voidstar:bB_rA_pC_gF_oB_yC:avrdude
+```
+
+An alternate build:
+```bash
+make dnlglsn/voidstar:bB_rA_pC_gF_oA_yB:avrdude
 ```
