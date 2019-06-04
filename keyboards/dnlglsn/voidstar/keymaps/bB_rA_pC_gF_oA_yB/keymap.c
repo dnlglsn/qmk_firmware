@@ -17,9 +17,9 @@
 #define XXXXXXX KC_NO
 
 // Keycode combo aliases
-#define L_MAIN DF(_MAIN)
-#define L_GAME DF(_GAME)
-#define A_SPC LALT_T(KC_SPC)
+#define L_MAIN DF(_MAIN) // Change to the main layer
+#define L_GAME DF(_GAME) // Change to the game layer
+#define A_SPC LALT_T(KC_SPC) // Tap for space, hold for alt
 
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
@@ -28,7 +28,7 @@ enum custom_keycodes {
 	ZZ_DOWN,
 };
 
-// Layout template - don't forget the backslashes at the end of each line! (They can't be in comments so I had to take them out.)
+// Layout template 
 // The positions with XXXXXXX don't actually exist in the matrix on the PCB.
 // _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 // _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
@@ -42,17 +42,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //                                                                          <-- Left Half	|	Right Half -->
 
 [_MAIN] = LAYOUT( \
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
-XXXXXXX, XXXXXXX, XXXXXXX, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,   		KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC, XXXXXXX, XXXXXXX, \
-XXXXXXX, XXXXXXX, XXXXXXX, KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,   		KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, XXXXXXX, KC_BSLS, XXXXXXX, \
-XXXXXXX, XXXXXXX, XXXXXXX, KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    XXXXXXX,		KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, XXXXXXX, KC_ENT,  XXXXXXX, XXXXXXX, \
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   		KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, ZZ_UP,   KC_DEL,  XXXXXXX, \
-XXXXXXX, XXXXXXX, XXXXXXX, KC_LCTL, KC_LGUI, MO(_FN), XXXXXXX, A_SPC,   XXXXXXX, XXXXXXX,		XXXXXXX, KC_SPC,  XXXXXXX, KC_RALT, ZZ_CTRL, XXXXXXX, KC_LEFT, ZZ_DOWN, KC_RGHT, XXXXXXX  \
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,   		KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC, XXXXXXX, XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,   		KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, XXXXXXX, KC_BSLS, XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    XXXXXXX,		KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, XXXXXXX, KC_ENT,  XXXXXXX, XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   		KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, ZZ_UP,   KC_DEL,  XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, KC_LCTL, KC_LGUI, MO(_FN), XXXXXXX, A_SPC,   XXXXXXX, XXXXXXX,		XXXXXXX, KC_SPC,  XXXXXXX, KC_RALT, ZZ_CTRL, XXXXXXX, KC_LEFT, ZZ_DOWN, KC_RGHT, XXXXXXX 
 ),
 
 // For games, disable GUI key and make the left spacebar normal so I can hold it down.
 [_GAME] = LAYOUT( \
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, XXXXXXX, _______, _______,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX,		_______, _______, _______, _______, _______, _______, XXXXXXX, _______, XXXXXXX, _______,
@@ -61,16 +61,16 @@ _______, _______, _______, _______, XXXXXXX, MO(_FG), XXXXXXX, KC_SPC,  XXXXXXX,
 ),
 
 [_FN] = LAYOUT( \
-_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-_______, _______, _______, KC_MUTE, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,  		KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, _______, _______, \
-_______, _______, _______, KC_VOLU, KC_HOME, KC_UP,   KC_END,  _______, _______, _______,		_______, _______, KC_PGUP, _______, KC_PSCR, _______, _______, XXXXXXX, KC_F5,   _______, \
-_______, _______, _______, KC_VOLD, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, XXXXXXX,		_______, KC_HOME, KC_PGDN, KC_END,  _______, _______, XXXXXXX, L_GAME,  XXXXXXX, _______, \
-_______, _______, _______, XXXXXXX, _______, _______, _______, KC_CAPS, _______, _______,		_______, _______, _______, _______, _______, _______, _______, KC_PGUP, _______, _______, \
-_______, _______, _______, _______, KC_APP,  _______, _______, _______, XXXXXXX, XXXXXXX,		XXXXXXX, KC_MPLY, XXXXXXX, _______, _______, _______, KC_HOME, KC_PGDN, KC_END,  _______  \
+_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+_______, _______, _______, KC_MUTE, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,  		KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, _______, _______,
+_______, _______, _______, KC_VOLU, KC_HOME, KC_UP,   KC_END,  KC_PGUP, _______, _______,		_______, _______, KC_PGUP, _______, KC_PSCR, _______, _______, XXXXXXX, KC_F5,   _______,
+_______, _______, _______, KC_VOLD, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______, XXXXXXX,		_______, KC_HOME, KC_PGDN, KC_END,  _______, _______, XXXXXXX, L_GAME,  XXXXXXX, _______,
+_______, _______, _______, XXXXXXX, _______, _______, _______, KC_CAPS, _______, _______,		_______, _______, _______, _______, _______, _______, _______, KC_PGUP, _______, _______,
+_______, _______, _______, _______, KC_APP,  _______, _______, _______, XXXXXXX, XXXXXXX,		XXXXXXX, KC_MPLY, XXXXXXX, _______, _______, _______, KC_HOME, KC_PGDN, KC_END,  _______ 
 ),
 
 [_FG] = LAYOUT( \
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,		XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,		_______, _______, _______, _______, _______, _______, _______, XXXXXXX, _______, _______,
 _______, _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX,		_______, _______, _______, _______, _______, _______, XXXXXXX, L_MAIN,  XXXXXXX, _______,
@@ -79,6 +79,8 @@ _______, _______, _______, _______, _______, _______, XXXXXXX, _______, XXXXXXX,
 ),
 
 };
+
+// MACROS DOWN BELOW
 
 bool isCtrlDown = false;
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
