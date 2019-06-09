@@ -66,7 +66,7 @@ _______, _______, _______, KC_MUTE, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  
 _______, _______, _______, KC_VOLU, KC_HOME, KC_UP,   KC_END,  KC_PGUP, _______, _______,		_______, _______, KC_PGUP, _______, KC_PSCR, _______, _______, XXXXXXX, KC_F5,   _______,
 _______, _______, _______, KC_VOLD, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______, XXXXXXX,		_______, KC_HOME, KC_PGDN, KC_END,  _______, _______, XXXXXXX, L_GAME,  XXXXXXX, _______,
 _______, _______, _______, XXXXXXX, _______, _______, _______, KC_CAPS, _______, _______,		_______, _______, _______, _______, _______, _______, _______, KC_PGUP, _______, _______,
-_______, _______, _______, _______, KC_APP,  _______, _______, KC_DEL,  XXXXXXX, XXXXXXX,		XXXXXXX, KC_BSPC, XXXXXXX, _______, _______, _______, KC_HOME, KC_PGDN, KC_END,  _______ 
+_______, _______, _______, _______, KC_APP,  _______, _______, KC_BSPC, XXXXXXX, XXXXXXX,		XXXXXXX, KC_DEL,  XXXXXXX, _______, _______, _______, KC_HOME, KC_PGDN, KC_END,  _______ 
 ),
 
 [_FG] = LAYOUT( \
