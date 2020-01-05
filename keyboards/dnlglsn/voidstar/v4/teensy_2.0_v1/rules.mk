@@ -2,8 +2,9 @@ MCU = atmega32u4
 F_CPU = 16000000
 ARCH = AVR8
 F_USB = $(F_CPU)
-BOOTLOADER = caterina
+BOOTLOADER = halfkay # halfkay for Teensy 2.0
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
+OPT_DEFS += -DBOOTLOADER_SIZE=512
 SPLIT_KEYBOARD = yes
 MOUSEKEY_ENABLE = yes # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes # Audio control and System control(+450)
@@ -13,4 +14,4 @@ EXTRAKEY_ENABLE = yes # Audio control and System control(+450)
 RGBLIGHT_ENABLE = no
 
 # When a new version is released, update the version.
-DEFAULT_FOLDER = dnlglsn/voidstar/v1
+DEFAULT_FOLDER = dnlglsn/voidstar/v4/teensy_2.0_v1
