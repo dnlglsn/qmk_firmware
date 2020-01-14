@@ -18,8 +18,10 @@
 #define MATRIX_COLS 11
 
 // Pins for rows and columns
+//                        R1, R2, R3, R4, R5
 #define MATRIX_ROW_PINS { F7, F6, F5, F4, F1 }
-#define MATRIX_COL_PINS { F0, B1, B2, B3, D2, D3, C7, D6, B7, B6, B5 }
+#define MATRIX_COL_PINS { F0, B1, B2, B3, D2, D3, C7, D6, B7, B6,  B5 }
+//                        C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11
 
 // Split keyboard configuration
 #define USE_I2C	// SCL = D0, SDA = D1
