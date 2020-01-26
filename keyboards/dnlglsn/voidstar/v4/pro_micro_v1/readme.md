@@ -42,6 +42,7 @@ command:
 
 ```bash
 make dnlglsn/voidstar/v4/pro_micro_v1:bA_rA_pC_gD_oA_yC:avrdude
+make dnlglsn/voidstar/v4/pro_micro_v1:bA_rA_pC_gD_oBE_yB:avrdude
 ```
 
 > If you run into issues on Linux about "butterfly programmer" failing, try
